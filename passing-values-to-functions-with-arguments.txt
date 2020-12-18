@@ -1,0 +1,6 @@
+//setting parameters
+function functionWithArgs(a,b) {
+    console.log(a + b);
+}
+//calling function
+functionWithArgs(2,2);
