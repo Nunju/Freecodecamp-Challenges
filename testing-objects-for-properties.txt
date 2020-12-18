@@ -1,0 +1,21 @@
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  
+  /*My code
+  if (checkObj.hasOwnProperty(checkProp)){
+    return checkObj[checkProp];
+  } else {
+    return "Not Found";
+  }
+*/
+
+//freecodecamp code
+  if(obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+
+  // Only change code above this line
+}
