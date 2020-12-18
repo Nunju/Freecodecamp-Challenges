@@ -1,0 +1,9 @@
+function getIndexToIns(arr, num) {
+  arr.push(num); //add num to array
+  arr.sort(function(a,b) { 
+    return a - b; //sort array in acending order
+  });
+  return arr.indexOf(num); //get index of added number
+}
+
+getIndexToIns([40, 60], 50);
