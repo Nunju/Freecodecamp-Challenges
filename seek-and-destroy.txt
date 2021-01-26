@@ -1,0 +1,14 @@
+function destroyer(arr) {
+  var argMatey = Array.prototype.slice.call(arguments);
+
+  for (var z = 0; z < arr.length; z++) {
+    for (var y = 0; y < argMatey.length; y++) {
+      if (arr[z] === argMatey[y]) {
+        delete arr[z];
+      }
+    }
+  }
+  return arr.filter(Boolean);
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

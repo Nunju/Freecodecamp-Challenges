@@ -1,0 +1,17 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  
+  function onlyInNumeroUno(uno, dos) {
+    for (var i = 0; i < uno.length; i++) {
+      if (dos.indexOf(uno[i]) === -1) {
+        newArr.push(uno[i]);
+      }
+    }
+  }
+
+  onlyInNumeroUno (arr1, arr2);
+  onlyInNumeroUno (arr2, arr1);
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);

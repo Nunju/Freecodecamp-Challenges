@@ -1,0 +1,10 @@
+function addTogether(uno, dos) {
+  if (typeof uno !== "number") {
+    return undefined;
+  }
+  const sum = dos =>
+    typeof dos ==="number" ? uno + dos : undefined;
+  return typeof dos === "undefined" ? dos => sum(dos) : sum (dos);
+}
+
+addTogether(2,3);

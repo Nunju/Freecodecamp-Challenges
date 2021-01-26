@@ -1,0 +1,21 @@
+function translatePigLatin(str) {
+//function translatePigLatin(str) {
+  let consonantRegex = /^[^aeiou]+/;
+//let consonantRegex = /^[^aeiou]+/;
+  let myConsonants = str.match(consonantRegex);
+//let myConsonants = str.match(consonantRegex);
+  return myConsonants !== null
+//return myConsonants !== null
+    ? str
+  //? str
+      .replace(consonantRegex, "")
+    //.replace(consonantRegex, "")
+      .concat(myConsonants)
+    //.concat(myConsonants)
+      .concat("ay")
+    //.concat("ay")
+    : str.concat("way"); 
+  //: str.concat("way"); 
+}
+
+translatePigLatin("consonant");
